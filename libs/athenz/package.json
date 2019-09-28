@@ -1,0 +1,36 @@
+{
+	"name": "athenz",
+	"main": "dest/index.js",
+	"types": "dest/index.d.ts",
+	"scripts": {
+		"build": "rm -Rf dest/ && tslint --fix --project ./ && ./node_modules/.bin/tsc"
+	},
+	"dependencies": {
+		"ramda": "^0.26.1",
+		"request-promise": "^4.2.4",
+		"rimraf": "^2.6.3",
+		"validator": "^10.11.0"
+	},
+	"devDependencies": {
+		"@types/node": "^10.9.4",
+		"@types/ramda": "^0.26.8",
+		"@types/request-promise": "^4.1.44",
+		"@types/rimraf": "^2.0.2",
+		"@types/validator": "^10.11.0",
+		"ts-node": "^6.0.0",
+		"tslint": "^5.16.0",
+		"typescript": "^3.1.6"
+	},
+	"keywords": [
+		"serverless",
+		"gcp-appengine",
+		"aws-lambda",
+		"sharp",
+		"cloud-storage",
+		"firestore",
+		"nodejs",
+		"ts"
+	],
+	"author": "Nicheal Pham",
+	"license": "MIT"
+}

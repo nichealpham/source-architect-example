@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "target": "es2018",
+        "module": "commonjs",
+        "lib": [
+            "es5"
+        ],
+        "rootDir": "./src",
+        "outDir": "dest",
+        "preserveConstEnums": true,
+        "strictNullChecks": true,
+        "skipLibCheck": true,
+        "moduleResolution": "node",
+        "removeComments": true,
+        "declaration": true,
+        "sourceMap": true
+    },
+    "include": [
+        "./src/**/*",
+        "**/*.d.ts"
+    ],
+    "exclude": [
+        "./**/*.map.js",
+    ]
+}
