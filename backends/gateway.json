@@ -1,0 +1,22 @@
+{
+    "local": {
+        "UserService": "http://localhost:4001/user",
+        "AnalyticService": "http://localhost:4005/analytics",
+        "AnalysisService": "http://localhost:4002/analysis",
+        "ConsoleService": "http://localhost:3000",
+        "PaymentService": "http://localhost:4006/payment",
+        "RecordService": "http://localhost:4004/record",
+        "ReportService": "http://localhost:4008/report",
+        "StreamService": "http://localhost:4007/stream"
+    },
+    "dev": {
+        "UserService": "https://cassandra-user-7wawdyeu3q-uc.a.run.app/user",
+        "AnalyticService": "https://cassandra-analytics-7wawdyeu3q-uc.a.run.app/analytics",
+        "AnalysisService": "http://35.238.21.8/analysis",
+        "ConsoleService": "https://cassandra-console-7wawdyeu3q-uc.a.run.app",
+        "PaymentService": "https://cassandra-payment-7wawdyeu3q-uc.a.run.app/payment",
+        "RecordService": "https://cassandra-record-7wawdyeu3q-uc.a.run.app/record",
+        "ReportService": "https://cassandra-report-7wawdyeu3q-uc.a.run.app/report",
+        "StreamService": "https://cassandra-stream-7wawdyeu3q-uc.a.run.app/stream"
+    }
+}

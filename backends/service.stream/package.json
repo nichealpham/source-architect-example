@@ -1,0 +1,32 @@
+{
+	"name": "microserver-less",
+	"version": "1.1.0",
+	"description": "Backend design pattern for Google Cloud App Engine, AWS Lambda and Docker",
+	"scripts": {
+		"local": "NODE_ENV=Local ./node_modules/.bin/ts-node ./src/server.ts",
+		"build": "./node_modules/.bin/tsc",
+		"test": "jest --coverage",
+		"docker": "chmod +x ./docker.sh && ./docker.sh",
+		"start": "NODE_ENV=Production node ./dest/server.js",
+		"submit": "gcloud builds submit --tag gcr.io/cassandra-243204/cassandra-stream",
+		"deploy": "gcloud beta run deploy --image gcr.io/cassandra-243204/cassandra-stream"
+	},
+	"dependencies": {
+		"moment": "^2.22.2",
+		"sandrasoft": "^2.2.9"
+	},
+	"devDependencies": {
+		"@types/node": "^10.9.4",
+		"ts-node": "^6.0.0",
+		"typescript": "^3.1.6"
+	},
+	"keywords": [
+		"cloud-storage",
+		"firestore",
+		"nodejs",
+		"docker",
+		"ts"
+	],
+	"author": "Nicheal Pham",
+	"license": "MIT"
+}

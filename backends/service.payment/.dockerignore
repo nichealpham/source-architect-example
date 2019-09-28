@@ -1,0 +1,7 @@
+docker.sh
+dockerfile
+readme.md
+node_modules
+npm-debug.log
+src
+tsconfig.json
