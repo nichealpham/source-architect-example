@@ -1,0 +1,33 @@
+div {
+    display: inline-block;
+}
+
+ /* col-md */
+.col-md-12 {
+    width: 100%;
+}
+
+.col-md-10 {
+    width: 83%;
+}
+
+.col-md-9 {
+    width: 75%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-2 {
+    width: 16%;
+}
+
+.col-md-1 {
+    width: 8%;
+}
+/* end of col-md */

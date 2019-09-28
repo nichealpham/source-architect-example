@@ -1,0 +1,402 @@
+.cs-3dot {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+/* CS-INPUT-WITH-LABEL */
+.cs-input-with-top-label {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.cs-input-with-top-label > span {
+    font-size: 13px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.cs-input-with-top-label > .cs-input {
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* CS-INPUT */
+.cs-input {
+    background-color:rgb(57, 66, 100);
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 13px;
+    border: solid 2px transparent;
+    transition: border 0.4s;
+}
+.cs-input:hover {
+    border-color: rgb(20, 159, 133);
+    /* background-color: #50597b; */
+}
+.cs-input:focus-within {
+	border-color: rgb(20, 159, 133);
+    /* background-color: #50597b; */
+}
+.cs-input:disabled {
+    cursor: context-menu;
+    border: 2px solid transparent;
+}
+/* CS-INPUT-ICON */
+.cs-input-icon i {
+    position: absolute;
+    float: left;
+    margin-left: 14px;
+    line-height: 42px;
+}
+.cs-input-icon input {
+    background-color:rgb(57, 66, 100);
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    padding-left: 36px;
+    padding-right: 14px;
+    font-size: 13px;
+    border: solid 2px transparent;
+    transition: border 0.4s;
+}
+.cs-input-icon .label-title {
+    background-color:rgb(57, 66, 100);
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    line-height: 39px;
+    padding-left: 36px;
+    padding-right: 14px;
+    font-size: 13px;
+    border: solid 2px transparent;
+    transition: border 0.4s;
+}
+.cs-input-icon input:hover {
+    border-color: rgb(20, 159, 133);
+    /* background-color: #50597b; */
+}
+.cs-input-icon input:focus-within {
+	border-color: rgb(20, 159, 133);
+    /* background-color: #50597b; */
+}
+.cs-input-icon input:disabled {
+    cursor: context-menu;
+    border: 2px solid transparent;
+}
+/* CS-BUTTON-SECTION */
+.cs-button-section {
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+}
+.cs-button-section button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 4px;
+    border-radius: 3px;
+    background-color:rgb(57, 66, 100);
+    transition: background-color 0.4s;
+}
+.cs-button-section button:hover {
+    background-color:#50597b;
+}
+.cs-button-section button:active {
+    background-color:rgb(43, 49, 77);
+}
+.cs-button-section button:disabled {
+    background-color:rgb(57, 66, 100);
+    cursor: not-allowed;
+}
+/* TOOL-TIPS */
+.cs-tooltip {
+    position: relative;
+    display: inline-block;
+}
+.cs-tooltip .tooltiptext {
+    font-size: 12px;
+    visibility: hidden;
+    width: 80px;
+    background-color: black;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    top: -100%;
+    left: calc(-50% + 4px);
+    /* margin-left: -42px; */
+}
+.cs-tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* CS-CONTAINER */
+.cs-container {
+    width: 100%;
+    border-radius: 6px;
+    position: relative;
+    padding: 0px;
+    display: inline-block;
+    background-color:rgb(57, 66, 100);
+    margin-bottom: 16px;
+    overflow: hidden;
+    font-size: 13px;
+}
+.cs-container .header {
+    cursor: pointer;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+    height: 42px;
+    line-height: 38px;
+    display: inline-block;
+    background-color: rgb(43, 49, 77);
+    font-size: 14px;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.cs-container .no-data {
+    width: 100%;
+    height: 42px;
+    line-height: 38px;
+    display: inline-block;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 13px;
+    padding-right: 12px;
+}
+.cs-container .footer {
+    width: 100%;
+    height: 42px;
+    line-height: 38px;
+    display: inline-block;
+    background-color: rgb(43, 49, 77);
+    font-size: 13px;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.cs-container .footer > .bottom-title {
+    position: absolute;
+    font-size: 14px;
+    height: 42px;
+    line-height: 32px;
+}
+.cs-container > .footer > .bottom-title > i {
+    margin-left: 10px;
+    margin-right: 2px;
+}
+.cs-container .custom-file-label {
+    background-color: transparent;
+    outline: none;
+    border: 0px solid rgb(20, 159, 133);
+    color: #E0E0E0;
+    transition: border 0.4s;
+}
+.cs-container .cs-file-upload {
+    width: 68px;
+    overflow: hidden;
+    margin-left: calc(100% - 68px);
+    border-radius: 6px;
+}
+.cs-container input {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgb(20, 159, 133);
+    border-radius: 6px;
+    height: 28px;
+    line-height: 24px;
+    transition: border 0.4s;
+    width: calc(100% - 10px);
+    margin-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.cs-container input:hover {
+    border-color: rgb(20, 159, 133);
+}
+.cs-container input:focus-within {
+    border-color: rgb(20, 159, 133);
+}
+.cs-container > .header > i {
+    float: right;
+    line-height: 38px;
+    font-size: 20px;
+    padding-left: 12px;
+}
+.cs-container > .header > .title-right {
+    float: right;
+    font-size: 14px;
+    height: 42px;
+    line-height: 38px;
+}
+.cs-container .pagination {
+    padding-top: 12px;
+    padding-bottom: 9px;
+}
+.cs-container table {
+    width: 100%;
+}
+.cs-container button {
+    border: 0px;
+    outline: none;
+}
+.cs-container button:active {
+    border: 0px;
+    outline: none;
+}
+.cs-container table .hover {
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+.cs-container table .hover:hover {
+    background-color: rgb(79, 88, 122);
+}
+.cs-container table .hover:focus-within {
+    background-color: rgb(79, 88, 122);
+}
+.cs-container table tr {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 2px solid rgb(43, 49, 77);
+}
+.cs-container table i {
+    line-height: 36px;
+}
+.cs-container table .custom-checkbox {
+    float: left;
+    margin-top: 0.1rem;
+}
+.cs-container .b-form-group.form-group {
+    padding: 0px;
+    margin: 0px;
+    height: 38px;
+}
+
+.cs-container .b-form-group.form-group > div {
+    height: 38px;
+}
+.cs-container .b-form-group.form-group > div > div {
+    margin-top: 6px;
+    height: 38px;
+}
+.cs-container .b-form-group.form-group > div > div label {
+    font-size: 10px;
+}
+/* CS-UPLOAD-FILE */
+.cs-upload-file {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+.cs-upload-file > button {
+    background: #128d76;
+    border: 0px;
+    font-size: 13px;
+    height: 42px;
+    line-height: 38px;
+    padding-left: 21px;
+    padding-right: 21px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+}
+.cs-upload-file > input[type=file] {
+    font-size: 100px;
+    height: 42px;
+    line-height: 38px;
+    padding-left: 21px;
+    padding-right: 21px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+}
+/* CS-BUTTON */
+.cs-button {
+    background: #e64c65;
+    border: 0px;
+    cursor: pointer;
+    font-size: 13px;
+    height: 42px;
+    line-height: 38px;
+    padding-left: 21px;
+    padding-right: 21px;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.4s;
+}
+.cs-button i {
+    margin-right: 8px;
+}
+.cs-button:disabled {
+    cursor: not-allowed;
+}
+.cs-button:hover {
+    outline: none;
+}
+.cs-button:active {
+    outline: none;
+}
+.cs-button:focus {
+    outline: none;
+}
+/* DANGER, SUCCESS, PRIMARY, SECONDARY COLOR */
+.cs-danger-bg {
+    background: #e64c65;
+}
+.cs-success-bg {
+    background: #128d76;
+}
+.cs-button.cs-danger-bg:hover {
+    background: #cc324b;
+}
+.cs-button.cs-danger-bg:active {
+    background: #962739;
+}
+.cs-button.cs-danger-bg:disabled {
+    background: #962739;
+}
+.cs-button.cs-success-bg {
+    background: #128d76;
+}
+.cs-button.cs-success-bg:hover {
+    background: rgb(20, 159, 133);
+}
+.cs-button.cs-success-bg:active {
+    background: #0f7562;
+}
+.cs-button.cs-success-bg:disabled {
+    background: #0b5245;
+}
+.cs-button.cs-primary-bg {
+    background: rgb(57, 66, 100);
+}
+.cs-button.cs-primary-bg:hover {
+    background-color:#50597b;
+}
+.cs-button.cs-primary-bg:active {
+    background-color:rgb(43, 49, 77);
+}
+.cs-button.cs-primary-bg:disabled {
+    background-color:rgb(43, 49, 77);
+}

@@ -1,0 +1,162 @@
+* {
+	font-family: 'Montserrat', sans-serif, "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+	"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+	color: #E0E0E0;
+}
+
+html {
+	font-size: 14px;
+	word-spacing: 1px;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+li {
+	cursor: pointer;
+}
+
+input {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif, "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+			"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+    height: 46px;
+    padding: 0px 10px 0px 10px;
+	margin:0px;
+	background-color:rgb(57,66,100);
+	border-radius:3px;
+	border-color: transparent;
+}
+
+a > i {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+a > img {
+	width: 24px;
+	height: 24px;
+	position: relative; 
+	float: left;
+	margin-right: 8px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	position: relative;
+	float: left;
+}
+.bar {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	min-height: 48px;
+	line-height: 48px;
+	padding: 0px 10px 0px 10px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	/* outline: none; */
+	text-decoration: none;
+	color: white;
+}
+
+input,
+input:before,
+input:after {
+	outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #E0E0E0;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #E0E0E0;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #E0E0E0;
+}
+.page-alert {
+	position: fixed;
+	top: 54px;
+	right: 6px;
+	z-index: 2;
+	font-size: 13px;
+	line-height: 100%;
+	padding: 10px 20px 10px 20px;
+}
+.basic_box {
+	width: 100%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.padding {
+	padding: 10px;
+}
+
+.hover,.hover-text {
+	transition: background-color 0.4s, color 0.4s;
+}
+.hover-underline {
+	transition: text-decoration 0.4s, color 0.2s;
+}
+.hover:hover {
+	background-color: rgb(79, 88, 122);
+}
+.hover:focus-within {
+	background-color: rgb(79, 88, 122);
+}
+
+.hover-text:hover {
+	color: rgb(20, 159, 133);
+}
+.hover-underline:hover {
+	text-decoration: underline;
+}
+.hover-underline:active {
+	color: rgb(20, 159, 133);
+	text-decoration: underline;
+}
+.mantle {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(31, 36, 60, 0.8);
+}
+.container-no-overflow {
+	width: 100%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+  	overflow: hidden;
+}
+.container-scroll-only-y {
+	width: 100%;
+	height: calc(100vh - 64px);
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	cursor: context-menu;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+

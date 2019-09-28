@@ -1,0 +1,27 @@
+{
+	"name": "microserver-less",
+	"version": "1.1.0",
+	"description": "Backend design pattern for Google Cloud App Engine, AWS Lambda and Docker",
+	"scripts": {
+		"local": "NODE_ENV=Local nuxt",
+		"dev": "NODE_ENV=Development nuxt",
+		"build": "nuxt build",
+		"start": "PORT=8080 HOST=0.0.0.0 NODE_ENV=Production nuxt start",
+		"docker": "chmod +x ./docker.sh && ./docker.sh",
+		"submit": "npm run build && gcloud builds submit --tag gcr.io/cassandra-243204/cassandra-console",
+		"deploy": "gcloud beta run deploy --image gcr.io/cassandra-243204/cassandra-console"
+	},
+	"dependencies": {
+		"@nuxtjs/moment": "1.0.0",
+		"axios": "0.18.0",
+		"bootstrap-vue": "2.0.0-rc.11",
+		"chartist": "0.11.0",
+		"debug": "4.1.0",
+		"jquery": "3.3.1",
+		"moment": "2.22.2",
+		"nuxt": "1.4.1",
+		"vue-cookie": "1.1.4"
+	},
+	"author": "Nicheal Pham",
+	"license": "MIT"
+}
