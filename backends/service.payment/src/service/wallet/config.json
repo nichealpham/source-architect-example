@@ -1,5 +1,0 @@
-{
-    "activation_url": "http://35.231.114.91:4006/payment/wallet/activate",
-    "activation_success_url": "http://35.231.114.91:4006/payment/explorer?activated=true",
-    "activation_failed_url": "http://35.231.114.91:4006/payment/explorer?activated=false"
-}
